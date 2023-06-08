@@ -1,0 +1,61 @@
+.mainNav {
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+  padding: 0.6rem 1.8rem;
+  user-select: none;
+  background-color: rgba(255, 255, 255);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000; /* Adjust the z-index value as needed */
+  backdrop-filter: blur(1rem);
+}
+.scrolledNav {
+  background-color: rgba(255, 255, 255, 0.95);
+}
+
+.mainNav .Nav-container {
+  height: 5rem;
+  max-width: var(--max-width);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+.mainNav .logo {
+  font-size: 2.4rem;
+  font-family: roboto, sans-serif;
+  font-weight: 600;
+  line-height: none !important;
+}
+.mainNav .logo h3 {
+  margin: 0;
+}
+.mainNav .logo a {
+  text-decoration: none;
+}
+.mainNav .logo span {
+  color: var(--accent-color);
+  font-weight: normal;
+}
+.mainNav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  list-style: none;
+  gap: 2.4rem;
+}
+.mainNav ul li {
+  font-size: 1.6rem;
+}
+.mainNav ul li a {
+  color: var(--accent-color-strong);
+  text-decoration: none;
+  transition: var(--transition-1);
+}
+.mainNav ul li a:hover {
+  color: var(--text-color-black);
+  outline: 1px solid var(--accent-color);
+  outline-offset: 1rem;
+  outline-style: double;
+}

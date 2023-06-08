@@ -1,0 +1,34 @@
+.about-us-container {
+  height: 100vh; /* Set the container height to fill the viewport */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+}
+
+.about-us-container h2 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.about-us-container p {
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+
+.about-us-container h3 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.about-us-container ul {
+  font-size: 24px;
+  list-style-type: none;
+  padding: 0;
+}
+
+.about-us-container ul li {
+  margin-bottom: 10px;
+}

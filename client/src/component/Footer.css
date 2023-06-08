@@ -1,0 +1,36 @@
+.footer-content {
+  display: grid;
+  grid-template-columns: 3fr 3fr 3fr;
+  box-shadow: 0 -1px 0 0 var(--accent-color-light);
+  padding: 2.4rem;
+  padding-top: 3.2rem;
+  text-align: center;
+  justify-content: center;
+}
+
+.social-links {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  gap: 2.4rem;
+}
+.social-links i {
+  padding: 0;
+  font-size: 1.6rem;
+  color: var(--accent-color-strong);
+}
+.social-links i:hover {
+  color: black;
+}
+.social-links a {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+.footer-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.copyright {
+  text-align: end;
+}

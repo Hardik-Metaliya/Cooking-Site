@@ -1,0 +1,28 @@
+.contact-container {
+  margin-top: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.clicked {
+  pointer-events: none;
+  cursor: not-allowed;
+  color: grey;
+}
+.none {
+  color: red;
+}
+.success {
+  color: green;
+}
+.error {
+  color: red;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  align-items: end;
+  justify-content: center;
+}

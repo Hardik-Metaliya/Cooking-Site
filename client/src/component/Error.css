@@ -1,0 +1,31 @@
+.Error {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.Error h2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 42rem;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  font-weight: 400;
+  user-select: none;
+  color: var(--accent-color-light);
+  letter-spacing: 5rem;
+}
+.Error-home-btn {
+  margin-top: 1.2rem;
+  padding: 0.5rem 1rem;
+}
+.Error-home-btn a {
+  color: blue;
+  text-decoration: none;
+  font-size: 1.4rem;
+  padding-right: 2.4rem;
+}
