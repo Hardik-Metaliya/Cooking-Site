@@ -5,6 +5,7 @@ import "slick-carousel/slick/slick-theme.css";
 import { Link } from "react-router-dom";
 const FeaturedRecipes = () => {
   const [recipes, setRecipes] = useState([]);
+  const [isLoading, setisLoading] = useState(true);
   const sliderRef = useRef(null);
   useEffect(() => {
     const fetchData = async () => {
@@ -36,14 +37,16 @@ const FeaturedRecipes = () => {
     prevArrow: (
       <button
         className="slick-prev"
-        onClick={() => sliderRef.current.slickPrev()}>
+        onClick={() => sliderRef.current.slickPrev()}
+      >
         Previous
       </button>
     ),
     nextArrow: (
       <button
         className="slick-next"
-        onClick={() => sliderRef.current.slickNext()}>
+        onClick={() => sliderRef.current.slickNext()}
+      >
         Next
       </button>
     ),
@@ -71,12 +74,14 @@ const FeaturedRecipes = () => {
         <div className="featured-recipes-buttons">
           <button
             className="prev-button"
-            onClick={() => sliderRef.current.slickPrev()}>
+            onClick={() => sliderRef.current.slickPrev()}
+          >
             &larr;
           </button>
           <button
             className="next-button"
-            onClick={() => sliderRef.current.slickNext()}>
+            onClick={() => sliderRef.current.slickNext()}
+          >
             &rarr;
           </button>
         </div>

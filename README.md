@@ -54,9 +54,11 @@ npm install
 - Sample .env file:
 
 ```
-PORT=3000
-MONGODB_URI=mongodb://localhost:27017/cooking-website
-JWT_SECRET=your-JWT-secreat
+Email_ID=example@gmail.com email id that will send email to To_Email
+Email_ID_Pass=your app password for gmail just search app pass on google very easy steps
+JWT_SECRET=jwt token password
+MONGODB_URI=mongodburi
+To_Email=the email which will receive the mail sent by Email_ID
 ```
 
 5.Set up MongoDB:

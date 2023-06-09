@@ -6,26 +6,45 @@ const Footer = () => {
       <div className="container">
         <div className="footer-content">
           <div className="social-links">
-            <a href="#" target="_blank" rel="noopener noreferrer">
-              <i className="fab fa-facebook-f"></i>
+            <a
+              href="https://www.linkedin.com/in/hardikmetaliya/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i className="fab fa-linkedin"></i>
             </a>
-            <a href="#" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://twitter.com/hardikmetaliya8"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <i className="fab fa-twitter"></i>
             </a>
-            <a href="#" target="_blank" rel="noopener noreferrer">
-              <i className="fab fa-instagram"></i>
+            <a
+              href="https://github.com/Hardik-Metaliya"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i className="fab fa-github"></i>
             </a>
-            <a href="#" target="_blank" rel="noopener noreferrer">
-              <i className="fab fa-pinterest"></i>
-            </a>
+            <div className="tooltip">
+              <span className="tooltip-text">Download Resume</span>
+              <a
+                href="https://drive.google.com/uc?export=download&id=1yuPh3Etl_oFkkOLjjW180h8-1sD8w2Db"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i className="fas fa-file-download"></i>
+              </a>
+            </div>
           </div>
           <div className="footer-info">
             <p>
-              Address: 1234 Main Street, City, State ZIP
+              Address: Vadodara, Gujarat, India
               <br />
-              Phone: (123) 456-7890
+              Design & Developed by Hardik Metaliya
               <br />
-              Email: info@wecook.com
+              Email:hardikmetaliya@gmail.com
             </p>
           </div>
           <p className="copyright">
