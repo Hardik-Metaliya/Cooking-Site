@@ -42,9 +42,8 @@ const ContactForm = () => {
           body: JSON.stringify({ name, email, message }),
         }
       );
-
       if (response.ok) {
-        setSuccessMessage("Email sent successfully");
+        setSuccessMessage("sent successfully");
         setName("");
         setEmail("");
         setMessage("");
@@ -61,51 +60,57 @@ const ContactForm = () => {
   return (
     <form
       onSubmit={handleSubmit}
-      className="container section-lg contact-container">
-      <div>
-        <label htmlFor="name">Name</label>
-        <input
-          type="text"
-          id="name"
-          value={name}
-          onChange={(e) => setName(e.target.value)}
-          required
-        />
-        {errors.name && <span className="error">{errors.name}</span>}
+      className="container section-lg "
+      id="contact-form"
+    >
+      <div className="form">
+        <div>
+          <label htmlFor="name">Name</label>
+          <input
+            type="text"
+            id="name"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            required
+          />
+          {errors.name && <span className="error">{errors.name}</span>}
+        </div>
+        <div>
+          <label htmlFor="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            required
+          />
+          {errors.email && <span className="error">{errors.email}</span>}
+        </div>
+        <div>
+          <label htmlFor="message">Message</label>
+          <textarea
+            id="message"
+            value={message}
+            onChange={(e) => setMessage(e.target.value)}
+            required
+          ></textarea>
+          {errors.message && <span className="error">{errors.message}</span>}
+        </div>
+        {errors.server && (
+          <span className="error">
+            {errors.server} if this presist direct email me my
+            email:hardikmetaliya6121@gmail.com{" "}
+          </span>
+        )}
+        {successMessage && <div className="success">{successMessage}</div>}
+        <button
+          type="submit"
+          onClick={() => setwasclicked(true)}
+          className={wasclicked ? "clicked" : "none"}
+        >
+          Submit
+        </button>
       </div>
-      <div>
-        <label htmlFor="email">Email</label>
-        <input
-          type="email"
-          id="email"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-          required
-        />
-        {errors.email && <span className="error">{errors.email}</span>}
-      </div>
-      <div>
-        <label htmlFor="message">Message</label>
-        <textarea
-          id="message"
-          value={message}
-          onChange={(e) => setMessage(e.target.value)}
-          required></textarea>
-        {errors.message && <span className="error">{errors.message}</span>}
-      </div>
-      {errors.server && (
-        <span className="error">
-          {errors.server} if this presist direct email me my
-          email:hardikmetaliya6121@gmail.com{" "}
-        </span>
-      )}
-      {successMessage && <div className="success">{successMessage}</div>}
-      <button
-        type="submit"
-        onClick={() => setwasclicked(true)}
-        className={wasclicked ? "clicked" : "none"}>
-        Submit
-      </button>
     </form>
   );
 };
