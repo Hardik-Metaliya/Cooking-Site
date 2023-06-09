@@ -1,34 +1,25 @@
-.about-us-container {
-  height: 100vh; /* Set the container height to fill the viewport */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-  text-align: center;
+.aboutus-container {
+  max-width: 800px;
+  margin: 7rem auto;
+  padding: 40px;
+  outline: 1px solid var(--accent-color);
+  box-shadow: 12px 12px 0 var(--accent-color);
 }
 
-.about-us-container h2 {
-  font-size: 48px;
+.aboutus-title {
+  font-size: 28px;
+  font-weight: bold;
   margin-bottom: 20px;
 }
 
-.about-us-container p {
-  font-size: 24px;
-  margin-bottom: 40px;
+.aboutus-subtitle {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 30px 0 10px;
 }
 
-.about-us-container h3 {
-  font-size: 36px;
+.aboutus-content {
+  font-size: 16px;
+  line-height: 1.5;
   margin-bottom: 20px;
-}
-
-.about-us-container ul {
-  font-size: 24px;
-  list-style-type: none;
-  padding: 0;
-}
-
-.about-us-container ul li {
-  margin-bottom: 10px;
 }
