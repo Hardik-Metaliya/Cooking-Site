@@ -1,11 +1,4 @@
 # Cooking Website
-[![Node.js](https://img.shields.io/badge/Node.js-v12%2B-brightgreen)](https://nodejs.org/)
-[![MongoDB](https://img.shields.io/badge/MongoDB-Database-brightgreen)](https://www.mongodb.com/)
-[![React](https://img.shields.io/badge/React-Frontend-blue)](https://reactjs.org/)
-[![Express](https://img.shields.io/badge/Express-Backend-blue)](https://expressjs.com/)
-[![crypto-js](https://img.shields.io/badge/crypto--js-Encryption-orange)](https://www.npmjs.com/package/crypto-js)
-[![Render](https://img.shields.io/badge/Render-CI%2FCD-lightgrey)](https://render.com/)
-[![Netlify](https://img.shields.io/badge/Netlify-CI%2FCD-lightgrey)](https://www.netlify.com/)
 
 [![Node.js](https://img.shields.io/badge/Node.js-v12%2B-brightgreen)](https://nodejs.org/)
 [![MongoDB](https://img.shields.io/badge/MongoDB-Database-brightgreen)](https://www.mongodb.com/)
