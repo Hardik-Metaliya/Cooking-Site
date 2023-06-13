@@ -67,7 +67,7 @@ router.get("/category/:category", (req, res) => {
     });
 });
 
-router.post("/addrecipe ", authenticateToken, (req, res) => {
+router.post("/addrecipe", authenticateToken, (req, res) => {
   // Code for creating a new recipe
   const {
     name,
