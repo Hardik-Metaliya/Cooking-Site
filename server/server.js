@@ -23,7 +23,9 @@ mongoose
 const app = express();
 app.use(cors());
 app.use(bodyParser.json());
-
+app.get("/", (req, res) => {
+  res.sendFile(__dirname + "/index.html");
+});
 // Middleware to authenticate the token
 // function authenticateToken(req, res, next) {
 //   const token = req.headers.authorization?.split(" ")[1];
