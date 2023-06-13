@@ -4,6 +4,9 @@
 [![React](https://img.shields.io/badge/React-Frontend-blue)](https://reactjs.org/)
 [![Express](https://img.shields.io/badge/Express-Backend-blue)](https://expressjs.com/)
 [![crypto-js](https://img.shields.io/badge/crypto--js-Encryption-orange)](https://www.npmjs.com/package/crypto-js)
+[![Render](https://img.shields.io/badge/Render-CI%2FCD-lightgrey)](https://render.com/)
+[![Netlify](https://img.shields.io/badge/Netlify-CI%2FCD-lightgrey)](https://www.netlify.com/)
+
 <br>
 This is a cooking website project which is Full-Stack (MERN) that allows users to view and create(admin only) recipes. It provides various features such as authentication, recipe listing, recipe details, recipe filtering , Categorization ,Form-Submissions which are send to your email , and recipe creation,.
 
