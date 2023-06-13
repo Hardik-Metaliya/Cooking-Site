@@ -1,10 +1,21 @@
 # Cooking Website
 
-This is a cooking website project that allows users to view and create recipes. It provides various features such as authentication, recipe listing, recipe details, and recipe creation.
+[![Node.js](https://img.shields.io/badge/Node.js-v12%2B-brightgreen)](https://nodejs.org/)
+[![MongoDB](https://img.shields.io/badge/MongoDB-Database-brightgreen)](https://www.mongodb.com/)
+[![React](https://img.shields.io/badge/React-Frontend-blue)](https://reactjs.org/)
+[![Express](https://img.shields.io/badge/Express-Backend-blue)](https://expressjs.com/)
+[![crypto-js](https://img.shields.io/badge/crypto--js-Encryption-orange)](https://www.npmjs.com/package/crypto-js)
+[![Render](https://img.shields.io/badge/Render-CI%2FCD-lightgrey)](https://render.com/)
+[![Netlify](https://img.shields.io/badge/Netlify-CI%2FCD-lightgrey)](https://www.netlify.com/)
+
+<br>
+This is a Full-Stack (MERN) cooking website project that enables users to explore and create recipes. It offers a comprehensive set of features, including user authentication, recipe listing, recipe details, recipe filtering, categorization, form submissions (sent to the admins's email alerting them of new form submission), and recipe creation. The project follows the MERN (MongoDB, Express, React, Node.js) stack architecture, ensuring a robust and scalable application.Using CI/CD to deploy automatically when commit or merge in main branch using onrender.com for api hosting and netlify.com for frontend deployment
 
 ## Table of Contents
 
 - [Features](#features)
+- [Demo](#demo)
+- [TODO](#todo)
 - [Requirements](#requirements)
 - [Installation](#installation)
 - [Usage](#usage)
@@ -18,6 +29,18 @@ This is a cooking website project that allows users to view and create recipes. 
 - Recipe creation: Authenticated users can create new recipes.
 - Categories: Recipes can be categorized for easy navigation.
 - Tags: Recipes can be tagged for easier search and organization.
+
+## Demo
+
+- Frontend: [https://wecook-hardikmetaliya.netlify.app/](https://wecook-hardikmetaliya.netlify.app/)
+- Backend: [https://cooking-site.onrender.com/](https://cooking-site.onrender.com/)
+
+## TODO
+
+- Make it Mobile Friendly
+- Add some Analytics service eg Google analytics
+- Improve SEO
+- Add Lazy loadig in Frontend
 
 ## Requirements
 
@@ -46,7 +69,7 @@ cd cooking-website
 npm install
 ```
 
-4 .Set up environment variables:
+4 .Set up environment variables in server/ dir:
 
 - Create a `.env` file in the root directory of the project.
 - Copy the content of .env.example into .env.
