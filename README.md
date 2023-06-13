@@ -8,7 +8,7 @@
 [![Netlify](https://img.shields.io/badge/Netlify-CI%2FCD-lightgrey)](https://www.netlify.com/)
 
 <br>
-This is a cooking website project which is Full-Stack (MERN) that allows users to view and create(admin only) recipes. It provides various features such as authentication, recipe listing, recipe details, recipe filtering , Categorization ,Form-Submissions which are send to your email , and recipe creation,.
+This is a Full-Stack (MERN) cooking website project that enables users to explore and create recipes. It offers a comprehensive set of features, including user authentication, recipe listing, recipe details, recipe filtering, categorization, form submissions (sent to the admins's email alerting them of new form submission), and recipe creation. The project follows the MERN (MongoDB, Express, React, Node.js) stack architecture, ensuring a robust and scalable application.Using CI/CD to deploy automatically when commit or merge in main branch using onrender.com for api hosting and netlify.com for frontend deployment 
 
 ## Table of Contents
 
