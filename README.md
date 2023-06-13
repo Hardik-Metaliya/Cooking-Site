@@ -5,6 +5,8 @@ This is a cooking website project that allows users to view and create recipes. 
 ## Table of Contents
 
 - [Features](#features)
+- [Demo](#demo)
+- [TODO](#todo)
 - [Requirements](#requirements)
 - [Installation](#installation)
 - [Usage](#usage)
@@ -18,6 +20,17 @@ This is a cooking website project that allows users to view and create recipes. 
 - Recipe creation: Authenticated users can create new recipes.
 - Categories: Recipes can be categorized for easy navigation.
 - Tags: Recipes can be tagged for easier search and organization.
+
+## Demo
+
+- Frontend: [https://wecook-hardikmetaliya.netlify.app/](https://wecook-hardikmetaliya.netlify.app/)
+- Backend: [https://cooking-site.onrender.com/](https://cooking-site.onrender.com/)
+
+## TODO
+- Make it Mobile Friendly
+- Add some Analytics service eg Google analytics 
+- Improve SEO
+- Add Lazy loadig in Frontend
 
 ## Requirements
 
@@ -46,7 +59,7 @@ cd cooking-website
 npm install
 ```
 
-4 .Set up environment variables:
+4 .Set up environment variables in server/ dir:
 
 - Create a `.env` file in the root directory of the project.
 - Copy the content of .env.example into .env.
