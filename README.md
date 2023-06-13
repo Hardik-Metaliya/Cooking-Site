@@ -11,6 +11,8 @@
 <br>
 This is a Full-Stack (MERN) cooking website project that enables users to explore and create recipes. It offers a comprehensive set of features, including user authentication, recipe listing, recipe details, recipe filtering, categorization, form submissions (sent to the admins's email alerting them of new form submission), and recipe creation. The project follows the MERN (MongoDB, Express, React, Node.js) stack architecture, ensuring a robust and scalable application.Using CI/CD to deploy automatically when commit or merge in main branch using onrender.com for api hosting and netlify.com for frontend deployment
 
+# Go to Individual directory for More info / images
+
 ## Table of Contents
 
 - [Features](#features)
