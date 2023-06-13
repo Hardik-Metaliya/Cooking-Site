@@ -1,6 +1,11 @@
 # Cooking Website
-
-This is a cooking website project that allows users to view and create recipes. It provides various features such as authentication, recipe listing, recipe details, and recipe creation.
+[![Node.js](https://img.shields.io/badge/Node.js-v12%2B-brightgreen)](https://nodejs.org/)
+[![MongoDB](https://img.shields.io/badge/MongoDB-Database-brightgreen)](https://www.mongodb.com/)
+[![React](https://img.shields.io/badge/React-Frontend-blue)](https://reactjs.org/)
+[![Express](https://img.shields.io/badge/Express-Backend-blue)](https://expressjs.com/)
+[![crypto-js](https://img.shields.io/badge/crypto--js-Encryption-orange)](https://www.npmjs.com/package/crypto-js)
+<br>
+This is a cooking website project which is Full-Stack (MERN) that allows users to view and create(admin only) recipes. It provides various features such as authentication, recipe listing, recipe details, recipe filtering , Categorization ,Form-Submissions which are send to your email , and recipe creation,.
 
 ## Table of Contents
 
