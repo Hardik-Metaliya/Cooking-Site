@@ -155,7 +155,16 @@
 .recipe-notes p {
   font-size: 1.4rem;
 }
-/* IndividualRecipe.css */
+.recipe-ingredients ul {
+  /* Ingredients list styles */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 10px;
+  list-style: none;
+}
+.recipe-ingredients ul li{
+  font-size: 1.6rem;
+}
 .recipe-nutrition {
   margin-top: 20px;
 }

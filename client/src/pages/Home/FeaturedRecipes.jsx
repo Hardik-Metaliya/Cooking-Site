@@ -52,7 +52,7 @@ const FeaturedRecipes = () => {
     ),
     responsive: [
       {
-        breakpoint: 768,
+        breakpoint: 770,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
@@ -104,7 +104,7 @@ const FeaturedRecipes = () => {
               ))}
             </div>
             <h4>{recipe.name}</h4>
-            <p>{recipe.description}</p>
+            <p>{recipe.description.slice(0, 100)}</p>
             <button className="link-to-recipe">
               <Link to={`/recipes/${recipe._id}`}>read more</Link>
             </button>
