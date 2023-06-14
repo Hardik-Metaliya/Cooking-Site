@@ -51,6 +51,22 @@ const TestimonialSlider = () => {
     speed: 500,
     slidesToShow: 2,
     slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 576,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
 
     afterChange: (index) => setCurrentSlide(index),
   };
@@ -69,10 +85,10 @@ const TestimonialSlider = () => {
         {testimonials.map((_, index) => (
           <div
             key={index}
-            className={`pagination-dot ${
-              currentSlide === index ? "active" : ""
-            }`}
-            onClick={() => setCurrentSlide(index)}></div>
+            className={`pagination-dot ${currentSlide === index ? "active" : ""
+              }`}
+            onClick={() => setCurrentSlide(index)}
+          ></div>
         ))}
       </div>
     </div>

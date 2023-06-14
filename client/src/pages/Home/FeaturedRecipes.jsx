@@ -52,7 +52,7 @@ const FeaturedRecipes = () => {
     ),
     responsive: [
       {
-        breakpoint: 768,
+        breakpoint: 770,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
