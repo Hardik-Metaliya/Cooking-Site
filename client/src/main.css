@@ -160,6 +160,9 @@ small,
   .hero-content p {
     display: none;
   }
+  .container {
+    margin: 1rem auto;
+  }
 }
 
 @media only screen and (max-width: 425px) {
@@ -198,6 +201,9 @@ small,
   .section-sm {
     margin: 1.2rem 0; /* Adjust margin for section on smaller mobile devices */
   }
+  .container {
+    margin: 1rem auto;
+  }
 }
 
 @media only screen and (max-width: 767px) {
@@ -235,6 +241,21 @@ small,
 
   .section-sm {
     margin: 1.6rem 0; /* Adjust margin for section on phones */
+  }
+  .container {
+    margin: 1rem auto;
+  }
+  /* About us */
+  .aboutus {
+    max-height: none;
+  }
+  .aboutus .content {
+    display: flex;
+    flex-direction: column;
+  }
+  /* Footer */
+  .footer-info {
+    font-size: 1rem;
   }
 }
 
