@@ -39,7 +39,6 @@ This is a Full-Stack (MERN) cooking website project that enables users to explor
 
 ## TODO
 
-- Make it Mobile Friendly
 - Add some Analytics service eg Google analytics
 - Improve SEO
 - Add Lazy loadig in Frontend
