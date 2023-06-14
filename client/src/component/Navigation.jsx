@@ -1,16 +1,15 @@
 import { Link, NavLink } from "react-router-dom";
 import "./Navigation.css";
 import { useEffect, useState } from "react";
+
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
       const scrollTop = window.pageYOffset;
-
-      // Adjust the scroll threshold as needed
       const scrollThreshold = 100;
-
       setIsScrolled(scrollTop > scrollThreshold);
     };
 
@@ -21,22 +20,24 @@ const Navigation = () => {
     };
   }, []);
 
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   useEffect(() => {
-    const handleScrollTop = () => {
-      const scrollTop = window.pageYOffset;
-
-      // Adjust the scroll threshold as needed
-      const scrollThreshold = 0;
-
-      setIsScrolled(scrollTop > scrollThreshold);
+    const closeMenuOnResize = () => {
+      if (window.innerWidth > 768) {
+        setIsMenuOpen(false);
+      }
     };
 
-    window.addEventListener("scroll", handleScrollTop);
+    window.addEventListener("resize", closeMenuOnResize);
 
     return () => {
-      window.removeEventListener("scroll", handleScrollTop);
+      window.removeEventListener("resize", closeMenuOnResize);
     };
   }, []);
+
   return (
     <nav className={isScrolled ? "scrolledNav mainNav" : "mainNav"}>
       <div className="Nav-container">
@@ -47,18 +48,31 @@ const Navigation = () => {
             </h3>
           </NavLink>
         </div>
-        <ul>
+
+        <div className="menu-icon" onClick={toggleMenu}>
+          <i className={isMenuOpen ? "fas fa-times" : "fas fa-bars"}></i>
+        </div>
+
+        <ul className={isMenuOpen ? "menu-items active" : "menu-items"}>
           <li>
-            <NavLink to="/">Home</NavLink>
+            <NavLink exact to="/" onClick={toggleMenu}>
+              Home
+            </NavLink>
           </li>
           <li>
-            <NavLink to="/recipes">Recipe's </NavLink>
+            <NavLink to="/recipes" onClick={toggleMenu}>
+              Recipe's
+            </NavLink>
           </li>
           <li>
-            <NavLink to="/aboutus">Aboutus</NavLink>
+            <NavLink to="/aboutus" onClick={toggleMenu}>
+              About Us
+            </NavLink>
           </li>
           <li>
-            <NavLink to="/contactus">Contact us</NavLink>
+            <NavLink to="/contactus" onClick={toggleMenu}>
+              Contact Us
+            </NavLink>
           </li>
         </ul>
       </div>
