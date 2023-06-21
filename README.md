@@ -40,7 +40,6 @@ This is a Full-Stack (MERN) cooking website project that enables users to explor
 ## TODO
 
 - Add some Analytics service eg Google analytics
-- Improve SEO
 - Add Lazy loadig in Frontend
 
 ## Requirements
