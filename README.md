@@ -4,7 +4,7 @@
 [![MongoDB](https://img.shields.io/badge/MongoDB-Database-brightgreen)](https://www.mongodb.com/)
 [![React](https://img.shields.io/badge/React-Frontend-blue)](https://reactjs.org/)
 [![Express](https://img.shields.io/badge/Express-Backend-blue)](https://expressjs.com/)
-[![crypto-js](https://img.shields.io/badge/crypto--js-Encryption-orange)](https://www.npmjs.com/package/crypto-js)
+[![bcryptjs](https://img.shields.io/badge/bcryptjs-Encryption-orange)](https://www.npmjs.com/package/bcryptjs)
 [![Render](https://img.shields.io/badge/Render-CI%2FCD-lightgrey)](https://render.com/)
 [![Netlify](https://img.shields.io/badge/Netlify-CI%2FCD-lightgrey)](https://www.netlify.com/)
 
